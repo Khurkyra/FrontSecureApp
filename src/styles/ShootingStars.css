@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: url('/src/assets/FondoAppSecure.png') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+  }
+  
+  .shooting-stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Evita que interfieran con clics */
+    overflow: hidden;
+  }
+  
+  .star {
+    position: absolute;
+    width: 2px; /* Grosor de la estrella */
+    height: 80px; /* Longitud de la estrella */
+    background: linear-gradient(to top, transparent, white); /* Ajustamos el degradado */
+    animation: shooting-diagonal 3s ease-in-out infinite;
+  }
+  
+  .star:nth-child(1) {
+    top: 10%;
+    left: 20%;
+    animation-delay: 1s;
+  }
+  
+  .star:nth-child(2) {
+    top: 30%;
+    left: 50%;
+    animation-delay: 2s;
+  }
+  
+  .star:nth-child(3) {
+    top: 60%;
+    left: 70%;
+    animation-delay: 3s;
+  }
+  
+  .star:nth-child(4) {
+    top: 5%;
+    left: 80%;
+    animation-delay: 1.5s;
+  }
+  
+  /* Nueva animación de caída diagonal hacia abajo */
+  @keyframes shooting-diagonal {
+    0% {
+      transform: translate(0, 0) rotate(250deg); /* Orienta la estrella hacia abajo e izquierda */
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-400px, 400px) rotate(250deg); /* Mueve la estrella hacia la izquierda y abajo */
+      opacity: 0;
+    }
+  }
+  
+
+  .login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .login-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4e2a84;
+  }
+  
+  .login-container form input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .login-container form button {
+    width: 100%;
+    padding: 10px;
+    background: #4e2a84;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .login-container form button:hover {
+    background: #3a2263;
+  }
+  
+  .login-container a {
+    display: block;
+    margin-top: 10px;
+    color: #4e2a84;
+    text-decoration: none;
+  }
+  
+  .login-container a:hover {
+    text-decoration: underline;
+  }
+    
+
+  .register-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    background: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .register-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #3a2263; /* Verde intenso */
+  }
+  
+  .register-container form input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .register-container form button {
+    width: 100%;
+    padding: 10px;
+    background: #4e2a84; /* Verde intenso */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .register-container form button:hover {
+    background: #4e2a84; /* Verde más oscuro */
+  }
+  
+  .register-container a {
+    display: block;
+    margin-top: 10px;
+    color: #4e2a84; /* Verde intenso */
+    text-decoration: none;
+  }
+  
+  .register-container a:hover {
+    text-decoration: underline;
+  }
+  
